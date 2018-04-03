@@ -1,0 +1,11 @@
+@mixin listReset() {
+	list-style: none;
+	padding-left: 0;
+	padding-top: 0;
+	margin-bottom: 0;
+}
+
+@mixin flex_container() {
+	display: flex;
+	justify-content: space-between;
+}
