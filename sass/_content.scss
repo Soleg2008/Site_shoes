@@ -1,16 +1,16 @@
-.content {	
-	padding-bottom: 137px;
-	& h2 {
-		padding-top: 62px;
-		padding-bottom: 38px;
-		margin: 0px;
-		font-size: 28px;
-		text-align: center;				
-	}
-	
-	& p {
-		margin: 0px;
-		margin-bottom: 137px;
-		font-size: 16px;
-	}
+.content {
+  border-top: 1px solid #bab4c2;
+  & h2 {
+    padding-top: 62px;
+    padding-bottom: 38px;
+    margin: 0px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  & p {
+    margin: 0px;
+    margin-bottom: 137px;
+    font-size: 16px;
+  }
 }

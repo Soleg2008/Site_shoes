@@ -1,17 +1,18 @@
 .bread_dots {
-	padding-top: 10px;
-	padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #bab4c2;
 }
 
-.bread_dots_item{
-	font-size: 14px;
-		& a{
-			text-decoration: none;
-			color: #2d1c45;
-		}
-		&:after {
-		content: '>';
-		display: inline-block;
-		margin-left: 4px;
-}
+.bread_dots_item {
+  font-size: 14px;
+  & a {
+    text-decoration: none;
+    color: #2d1c45;
+  }
+  &:after {
+    content: '>';
+    display: inline-block;
+    margin-left: 4px;
+  }
 }

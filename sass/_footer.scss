@@ -1,89 +1,91 @@
 .footer {
-	background: #2d1c45;
-	color: #fff;	
-	padding-bottom: 46px;
-	& ul {
-		@include listReset();
-	}
-	& li {
-		padding-bottom: 13px;
-	}
+  background: #2d1c45;
+  color: #fff;
+  padding-bottom: 46px;
+  & ul {
+    @include listReset();
+  }
+  & li {
+    padding-bottom: 13px;
+  }
 
-	& a {text-decoration: none;
-		color: #fff;
-	}
+  & a {
+    text-decoration: none;
+    color: #fff;
+  }
 }
 
 .footer_inner {
-	@include flex_container();
-	justify-content: space-between;
-	flex-wrap: wrap;
-	padding-top: 37px;
- }
- .footer_inner_left {
- 	@include flex_container();
-	justify-content: space-between;
-	flex-wrap: wrap;
- }
-
-.footer_menu { 
- 	padding-bottom: 46px;
- 	width: 50%; 
+  @include flex_container();
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 37px;
 }
 
- .footer_contacts{
-	padding-bottom: 37px;
- 	& li:first-child {
- 	color: #673b91;
- }
+.footer_inner_left {
+  @include flex_container();
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
- .footer_catalog { 
- 	width: 30%;
- 	& li:first-child {
- 	color: #673b91;
- }
+.footer_menu {
+  padding-bottom: 46px;
+  width: 50%;
 }
 
-.footer_copyright a{
-	text-decoration: underline;
+.footer_contacts {
+  padding-bottom: 37px;
+  & li:first-child {
+    color: #673b91;
+  }
+}
+
+.footer_catalog {
+  width: 30%;
+  & li:first-child {
+    color: #673b91;
+  }
+}
+
+.footer_copyright a {
+  text-decoration: underline;
 }
 
 .footer_copyright {
-	width: 100%;
-	font-size: 12px;
+  width: 100%;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 480px) {
-	
+
 }
 
 @media screen and (min-width: 768px) {
-	 .footer_menu {
- 		padding-bottom: 0px;
- 		width: auto;
-		}
+  .footer_menu {
+    padding-bottom: 0px;
+    width: auto;
+  }
 
-.footer_inner_left {
-	width: 65%;
-}
+  .footer_inner_left {
+    width: 65%;
+  }
 
-.footer_catalog { 
- 	width: auto;
-}
-	.footer_contacts {
-		padding-bottom: 0px;
-	}
+  .footer_catalog {
+    width: auto;
+  }
+  .footer_contacts {
+    padding-bottom: 0px;
+  }
 
-.footer_copyright {
-	width: auto;
-	}
+  .footer_copyright {
+    width: auto;
+  }
 }
 
 @media screen and (min-width: 992px) {
-	.footer_inner_left {
-	width: 50%;
-}
+  .footer_inner_left {
+    width: 50%;
+  }
 
 }
 
