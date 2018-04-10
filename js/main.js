@@ -16,4 +16,17 @@ $(function () {
     $(function() {
   $('.select').niceSelect();
 });
+        $(".acordion_item_title").on("click",function(){
+            var acordionItem = $(this).closest(".acordion_item");
+            var acordionItemSiblings = $(acordionItem).siblings(".acordion_item");
+            var accordionCheckboxWrap = $(acordionItemSiblings).children(".acordion_checkbox_wrap");
+            $(accordionCheckboxWrap).hide();
+            $(this).siblings(".acordion_checkbox_wrap").slideToggle();
+
+        });
+
+    $('.select_filters').on("click", function () {
+        $(".main_filtres").stop().slideToggle("slow");
+    });
+    
 });
