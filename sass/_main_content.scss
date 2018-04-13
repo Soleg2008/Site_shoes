@@ -4,22 +4,28 @@
 
 .main_filtres {
   position: absolute;
-  width: 75%;
+  width: 95%;
   top: 45px;
   left: 0;
   right: 0;
   margin: auto;
-  background: white;
   z-index: 999;
   display: none;
+}
+
+.main_filtres.active {
+  display: block;
+  margin: auto;
 }
 
 .main_accordion_catalog, .main_accordion {
   border: 1px solid #bab4c2;
   border-bottom: none;
+  background: #fff;
 }
 
 .filters {
+  position: relative;
   padding: 15px;
   background: #f2f2f2;
   & h2 {
@@ -27,6 +33,17 @@
     margin: 0 !important;
   }
 }
+
+.cross {
+  position: absolute;
+  right: 0;  
+  bottom: 130%;
+  background: url(../images/cross.svg) no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+}
+
 
 // Accordion
 .size {
@@ -145,7 +162,7 @@
   & h2 {
     text-align: center;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 19px;
     margin-bottom: 26px;
   }
 }
@@ -169,6 +186,7 @@
 
 .main_pagination {
   text-align: center !important;
+  margin-bottom: 35px;
   & ul {
     margin: 0;
   }
@@ -197,6 +215,9 @@
   padding: 10px 15px;
   line-height: 1;
 }
+.main_filters_container {
+  position: static !important;
+}
 
 .arrow {
   width: 15px;
@@ -217,7 +238,10 @@
 }
 
 @media screen and (min-width: 480px) {
-
+  .main_content_inner {
+    & h2{ font-size: 26px;
+    }
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -239,8 +263,7 @@
   }
 
   .main_filtres {
-    width: 43%;
-    left: 34px;
+    width: 95%;
     margin: 0;
 
   }
@@ -253,12 +276,19 @@
     width: auto;
     display: block;
   }
+
   .select_filters {
     display: none;
   }
+
   .main_accordion, .main_accordion_catalog {
     display: block;
   }
+
+  .cross {
+    display: none;
+  }
+
   .main_content_inner h2 {
     text-align: left;
   }

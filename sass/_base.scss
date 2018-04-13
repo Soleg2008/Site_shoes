@@ -23,3 +23,20 @@ body {
     clear: both;
   }
 }
+
+.wraper {
+  position: relative;
+  height: 100%;
+}
+.overlay {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .8);
+}
+.overlay.active {
+  display: block;
+}

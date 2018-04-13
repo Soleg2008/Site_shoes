@@ -26,7 +26,9 @@ $(function () {
         });
 
     $('.select_filters').on("click", function () {
-        $(".main_filtres").stop().slideToggle("slow");
+        $(".main_filtres, .overlay").addClass("active");
     });
-    
+    $('.cross').on("click", function () {
+        $(".main_filtres, .overlay").removeClass("active")
+    });
 });
